@@ -1,0 +1,14 @@
+main {
+    background-color: var(--c-white-bg-main);
+    max-height: 100vh;
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+    @include breakpoints(lg) {
+        padding: 35px;
+    }
+    @include breakpoints(xl) {
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+}

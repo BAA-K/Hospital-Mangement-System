@@ -1,0 +1,24 @@
+.doctors {
+    .card {
+        width: 100%;
+        border: none;
+        @include breakpoints(sm) {
+            width: calc(50% - 0.25em);
+        }
+        @include breakpoints(lg) {
+            width: calc(33% - 0.15rem);
+        }
+        @include breakpoints(xl) {
+            width: calc(25% - 0.4rem);
+        }
+        .avatar {
+            width: 200px;
+            @include breakpoints(xl) {
+                width: 225px;
+            }
+            margin: 0 auto;
+            display: block;
+            @include prefixer(border-radius, 50%);
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.footer {
+    border-top: 1px solid #8080809e;
+    .hours {
+        @include breakpoints(lg) {
+            padding-left: 50px;
+        }
+        li {
+            .day {
+                display: inline-block;
+                width: 120px;
+            }
+            &:not(:last-child) {
+                margin-bottom: 2px;
+            }
+        }
+    }
+    a {
+        font-weight: 500;
+        color: var(--c-gray-main);
+        @include prefixer(transition, var(--time-transition));
+        &:hover {
+            color: var(--c-black-main);
+        }
+    }
+}

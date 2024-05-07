@@ -1,0 +1,23 @@
+/*  Helpers  */
+@import "./styles/helpers/variables";
+@import "./styles/helpers/mixins";
+@import "./styles/helpers/animations";
+
+/*  Global  */
+@import "./styles/pages/global-rule";
+
+/*  Layout  */
+@import "./styles/layout/loading";
+@import "./styles/layout/sidebar";
+@import "./styles/layout/layout";
+
+/* Pages */
+@import "./styles/pages/home";
+@import "./styles/pages/login";
+@import "./styles/pages/doctor";
+@import "./styles/pages/add-admin";
+@import "./styles/pages/add_doctor";
+@import "./styles/pages/messages";
+
+/* Components */
+@import "./styles/components/toast";

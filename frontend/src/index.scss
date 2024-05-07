@@ -1,0 +1,22 @@
+/*  Helpers  */
+@import "./styles/helpers/variables";
+@import "./styles/helpers/mixins";
+@import "./styles/helpers/animations";
+
+/*  Global  */
+@import "./styles/pages/global-rule";
+
+/*  Layout  */
+@import "./styles/layout/header";
+@import "./styles/layout/footer";
+@import "./styles/layout/loading";
+@import "./styles/layout/hero";
+@import "./styles/layout/formSec";
+
+/* Pages */
+@import "./styles//pages/home";
+@import "./styles//pages/login";
+@import "./styles//pages/register";
+
+/* Components */
+@import "./styles/components/toast";

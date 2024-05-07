@@ -1,0 +1,20 @@
+$xs: "(max-width: 575.9px)";
+$sm: "(min-width: 576px)";
+$md: "(min-width: 768px)";
+$lg: "(min-width: 992px)";
+$xl: "(min-width: 1200px)";
+$xxl: "(min-width: 1400px)";
+:root {
+    --time-transition: 0.3s;
+    --time-long: 1s;
+    --c-white-main: #fff;
+    --c-black-main: #1c1d1d;
+    --c-black-hover: #00000099;
+    --c-blue-main: #0d6efd;
+    --c-white-bg-main: #e5e5e5;
+    --c-gray-main: #808080f0;
+    --c-text-blue: #370080a3;
+    --c-text-pink: #ff008d;
+    --c-link-main: #271776ca;
+    --c-bg-pur: #9083d5;
+}

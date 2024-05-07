@@ -1,0 +1,24 @@
+.header {
+    height: 75px;
+    @include prefixer(transition, var(--time-transition));
+    &.scrolled {
+        background-color: var(--c-white-main);
+        box-shadow: 1px 0 15px #817d7d36;
+    }
+    .login-button {
+        width: 120px;
+        letter-spacing: 2px;
+    }
+    .link-container a {
+        margin: 0 0 15px 0;
+        font-weight: 500;
+        color: var(--c-black-main);
+        @include prefixer(transition, var(--time-transition));
+        @include breakpoints(md) {
+            margin: 0 15px 0 0;
+        }
+        &:hover {
+            color: var(--c-black-hover);
+        }
+    }
+}

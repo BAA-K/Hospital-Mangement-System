@@ -1,0 +1,22 @@
+.add-doctor {
+    .avatar {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 15px;
+    }
+    .send-btn {
+        background: linear-gradient(
+            140deg,
+            var(--c-bg-pur),
+            var(--c-link-main)
+        );
+        width: fit-content;
+        margin: 15px auto;
+        padding: 6px 24px;
+        font-weight: 800;
+        @include prefixer(transition, var(--time-transition));
+        &:hover {
+            box-shadow: 5px 5px 20px var(--c-link-main);
+        }
+    }
+}

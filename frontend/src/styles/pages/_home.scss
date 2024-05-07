@@ -1,0 +1,35 @@
+.biography {
+    line-height: 1.2;
+    .title {
+        font-weight: 300;
+        color: var(--c-black-main);
+    }
+    .subtitle {
+        color: var(--c-black-main);
+    }
+}
+.department {
+    .card-image {
+        height: 250px;
+    }
+    span {
+        @include center-x;
+        bottom: 20px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        background-color: #0000009b;
+        width: 35px;
+        height: 35px;
+        @include prefixer(border-radius, 50%);
+        color: var(--c-white-main);
+        @include prefixer(transition, var(--time-transition));
+        &:after {
+            font-weight: bold;
+            font-size: 15px;
+        }
+        &:hover {
+            background-color: var(--c-black-main);
+        }
+    }
+}

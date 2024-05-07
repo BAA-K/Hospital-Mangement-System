@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    background: var(--c-white-bg-main);
+    font-size: 18px;
+    color: var(--c-black-main);
+}
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+*[data-ani] {
+    @include opacity(0);
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol {
+    margin: 0;
+    list-style: none;
+}
+input,
+textarea {
+    border: none;
+    outline: none;
+    &::placeholder {
+        @include prefixer(transition, var(--time-transition));
+    }
+    &:focus::placeholder {
+        @include opacity(0);
+    }
+}
+textarea {
+    resize: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}

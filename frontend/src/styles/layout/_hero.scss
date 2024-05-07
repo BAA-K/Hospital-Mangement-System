@@ -1,0 +1,68 @@
+.hero {
+    max-height: 100vh;
+    padding-top: 100px;
+    position: relative;
+    @include breakpoints(xs) {
+        min-height: 50vh;
+    }
+    .banner {
+        flex: 1;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        @include breakpoints(xs) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        &:last-of-type {
+            display: none;
+            @include breakpoints(lg) {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .title,
+        .subtitle {
+            width: 100%;
+            @include breakpoints(md) {
+                width: 650px;
+            }
+        }
+        .title {
+            margin-bottom: 50px;
+            word-spacing: 3px;
+            font-weight: 800;
+        }
+        .hero-image {
+            @include animation(floating-image, ease-in-out infinite 3s);
+        }
+    }
+    span {
+        @include breakpoints($xs) {
+            top: 230px;
+            right: 10px;
+        }
+        @include breakpoints(sm) {
+            top: 200px;
+        }
+        @include breakpoints(md) {
+            top: 50px;
+        }
+        position: absolute;
+        right: 50px;
+        z-index: -1;
+        img {
+            @include breakpoints(xs) {
+                width: 350px;
+            }
+            @include breakpoints(sm) {
+                width: 450px;
+            }
+            @include breakpoints(md) {
+                width: 650px;
+            }
+            @include breakpoints(lg) {
+                width: 750px;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.register {
+    padding: 100px 0 50px 0;
+    .header-form {
+        width: 95%;
+        margin: 0 auto;
+        @include breakpoints(sm) {
+            width: 500px;
+        }
+        @include breakpoints(md) {
+            width: 750px;
+        }
+        .title {
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            font-weight: 800;
+            color: var(--c-black-main);
+        }
+        .paragraph {
+            margin: 20px auto;
+        }
+    }
+    .row {
+        width: 100%;
+        @include breakpoints(sm) {
+            width: 500px;
+        }
+        @include breakpoints(md) {
+            width: 750px;
+        }
+        margin: 15px auto;
+    }
+    .send-btn {
+        background: linear-gradient(
+            140deg,
+            var(--c-link-second),
+            var(--c-link-main)
+        );
+        width: fit-content;
+        margin: 15px auto;
+        padding: 6px 24px;
+        font-weight: 800;
+        @include prefixer(transition, var(--time-transition));
+        &:hover {
+            box-shadow: 5px 5px 20px var(--c-link-main);
+        }
+    }
+    .link {
+        color: var(--c-link-main);
+        @include prefixer(transition, var(--time-transition));
+        &:hover {
+            color: var(--c-link-second);
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.main {
+    .banner {
+        .card {
+            border: 0;
+            @include prefixer(border-radius, 20px);
+        }
+        &:first-child {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            .card {
+                max-height: 35vh;
+                &:first-of-type {
+                    background-color: var(--c-bg-pur);
+                    width: 100%;
+                    @include breakpoints(xl) {
+                        width: calc(50% - 20px);
+                    }
+                }
+                &:not(:first-child) {
+                    width: 100%;
+                }
+                @include breakpoints(lg) {
+                    &:not(:first-of-type) {
+                        width: calc(50% - 10px);
+                        @include breakpoints(xl) {
+                            width: calc(25% - 10px);
+                        }
+                    }
+                }
+                &:last-of-type {
+                    h4 {
+                        color: var(--c-text-pink);
+                    }
+                }
+                .card-body {
+                    display: flex;
+                    align-items: center;
+                    .avatar {
+                        height: 32vh;
+                        display: none;
+                        @include breakpoints(md) {
+                            display: block;
+                        }
+                    }
+                    .info {
+                        span {
+                            color: var(--c-text-pink);
+                        }
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        &:last-child {
+            .card {
+                .card-body {
+                    .card-title {
+                        font-weight: 600;
+                    }
+                    .table-container {
+                        @include breakpoints(xl) {
+                            max-height: 500px;
+                        }
+                        .table {
+                            .row-table {
+                                th {
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    color: var(--c-gray-main);
+                                }
+                                .icon-holder {
+                                    @include centering;
+                                    .icon {
+                                        width: 25px;
+                                        height: 25px;
+                                        margin-right: 25px;
+                                        @include centering;
+                                        @include prefixer(border-radius, 50%);
+                                    }
+                                }
+                                .form-select {
+                                    padding-left: 0;
+                                    border: none;
+                                    box-shadow: none;
+                                    font-weight: 400;
+                                    option {
+                                        color: var(--c-black-main);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
